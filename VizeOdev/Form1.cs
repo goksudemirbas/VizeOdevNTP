@@ -29,10 +29,19 @@ namespace VizeOdev
 
             foreach (XmlNode item in n1)
             {
+                string bolge = item["Bolge"].InnerText;
                 string il = item["ili"].InnerText;
-                string sicaklik= item["Mak"].InnerText;
+                string durum = item["Durum"].InnerText;
+                string sicaklik = item["Mak"].InnerText;
+
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+                row.Cells[0].Value = bolge;
+                row.Cells[1].Value = il;
+                row.Cells[2].Value = durum;
+                row.Cells[3].Value = sicaklik;
+                dataGridView1.Rows.Add(row);
             }
-           
+            
         }
     }
 }
