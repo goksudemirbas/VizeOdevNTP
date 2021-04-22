@@ -1,0 +1,10 @@
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\VizeOdev.exe.config
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\VizeOdev.exe
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\VizeOdev.pdb
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.Form1.resources
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.Properties.Resources.resources
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.exe
+C:\Users\hp\source\repos\VizeOdev\VizeOdev\obj\Debug\VizeOdev.pdb

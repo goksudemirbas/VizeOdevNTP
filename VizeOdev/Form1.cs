@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace VizeOdev
 {
@@ -18,10 +19,20 @@ namespace VizeOdev
             InitializeComponent();
         }
 
-        const string xmlbaglanti = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
+         string xmlbaglanti = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
         private void Form1_Load(object sender, EventArgs e)
         {
+            XmlDocument belge = new XmlDocument();
+            belge.Load(xmlbaglanti);
+            XmlElement root = belge.DocumentElement;
+            XmlNodeList n1 = root.SelectNodes("sehirler");
 
+            foreach (XmlNode item in n1)
+            {
+                string il = item["ili"].InnerText;
+                string sicaklik= item["Mak"].InnerText;
+            }
+           
         }
     }
 }
