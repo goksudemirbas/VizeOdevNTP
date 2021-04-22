@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace VizeOdev
 {
@@ -17,9 +18,10 @@ namespace VizeOdev
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        const string xmlbaglanti = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
+        private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("İlk gönderim deneme");
+
         }
     }
 }
