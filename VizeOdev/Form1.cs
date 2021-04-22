@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
+
 namespace VizeOdev
 {
     public partial class Form1 : Form
@@ -41,7 +42,21 @@ namespace VizeOdev
                 row.Cells[3].Value = sicaklik;
                 dataGridView1.Rows.Add(row);
             }
-            
+
+            XmlTextWriter veri = new XmlTextWriter("Hava durumu.txt" , Encoding.UTF8);
+            veri.WriteStartDocument();
+            veri.WriteStartElement("Bolge");
+            veri.WriteStartElement("ili");
+            veri.WriteStartElement("Durum");
+            veri.WriteStartElement("Mak");
+            veri.WriteEndElement();
+            veri.WriteEndElement();
+            veri.WriteEndElement();
+            veri.WriteEndElement();
+           
+            veri.Close();
         }
+        
+      
     }
 }
