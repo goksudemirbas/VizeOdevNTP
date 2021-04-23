@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
+using System.IO;
 
 
 namespace VizeOdev
@@ -43,20 +44,22 @@ namespace VizeOdev
                 dataGridView1.Rows.Add(row);
             }
 
-            XmlTextWriter veri = new XmlTextWriter("Hava durumu.txt" , Encoding.UTF8);
-            veri.WriteStartDocument();
-            veri.WriteStartElement("Bolge");
-            veri.WriteStartElement("ili");
-            veri.WriteStartElement("Durum");
-            veri.WriteStartElement("Mak");
-            veri.WriteEndElement();
-            veri.WriteEndElement();
-            veri.WriteEndElement();
-            veri.WriteEndElement();
-           
-            veri.Close();
-        }
-        
+            TextWriter yaz = new StreamWriter(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\Hava.txt");
+            for (int i = 0; i < dataGridView1.Rows.Count-1 ; i++)
+            {
+                for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                {
+                    yaz.Write("\t" + dataGridView1.Rows[i].Cells[j].Value.ToString() + "\t" + "|");
+                }
+                yaz.WriteLine("");
+
+            }
+            yaz.Close();
       
+
+        }
+
+       
+        }
     }
-}
+

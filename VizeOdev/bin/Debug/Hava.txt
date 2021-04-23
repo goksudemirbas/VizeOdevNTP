@@ -1,0 +1,32 @@
+	Marmara	|	İSTANBUL	|	Parçalı bulutlu, gece saatlerinden itibaren çok bulutlu	|	18	|
+	Marmara	|	KOCAELİ	|	Parçalı bulutlu, gece saatlerinden itibaren çok bulutlu	|	24	|
+	Marmara	|	ÇANAKKALE	|	Parçalı zamanla çok bulutlu, gece saatlerinden itibaren sağanak yağışlı	|	20	|
+	Ege	|	İZMİR	|	Az bulutlu ve açık	|	25	|
+	Ege	|	A.KARAHİSAR	|	Az bulutlu ve açık	|	22	|
+	Ege	|	MUĞLA	|	Az bulutlu ve açık	|	25	|
+	Akdeniz	|	ANTALYA	|	Az bulutlu ve açık 	|	22	|
+	Akdeniz	|	ADANA	|	Az bulutlu ve açık 	|	28	|
+	IcAnadolu	|	ANKARA	|	Az bulutlu ve açık	|	22	|
+	IcAnadolu	|	ESKİŞEHİR	|	Az bulutlu ve açık, zamanla parçalı bulutlu	|	21	|
+	IcAnadolu	|	KONYA	|	Az bulutlu ve açık	|	25	|
+	BatiKaradeniz	|	BOLU	|	Parçalı bulutlu	|	21	|
+	BatiKaradeniz	|	ZONGULDAK	|	Parçalı bulutlu	|	19	|
+	BatiKaradeniz	|	KASTAMONU	|	Parçalı bulutlu	|	22	|
+	OrtaVeDoguKaradeniz	|	SAMSUN	|	Az bulutlu ve açık	|	18	|
+	OrtaVeDoguKaradeniz	|	TRABZON	|	Az bulutlu ve açık, sabah saatlerinde parçalı bulutlu	|	15	|
+	OrtaVeDoguKaradeniz	|	ARTVİN	|	Az bulutlu ve açık, sabah saatlerinde parçalı bulutlu	|	18	|
+	DoguAnadolu	|	ERZURUM	|	Az bulutlu ve açık, sabah saatlerinde parçalı bulutlu	|	20	|
+	DoguAnadolu	|	KARS	|	Az bulutlu ve açık, sabah saatlerinde parçalı bulutlu	|	19	|
+	DoguAnadolu	|	VAN	|	Az bulutlu ve açık	|	19	|
+	GuneyDoguAnadolu	|	DİYARBAKIR	|	Az bulutlu ve açık	|	27	|
+	GuneyDoguAnadolu	|	ADIYAMAN	|	Az bulutlu ve açık	|	25	|
+	GuneyDoguAnadolu	|	ŞANLIURFA	|	Az bulutlu ve açık	|	27	|
+	DoguAnadolu	|	IĞDIR	|	Az bulutlu ve açık	|	27	|
+	BatiKaradeniz	|	DÜZCE	|	Parçalı bulutlu	|	24	|
+	GuneyDoguAnadolu	|	SİİRT	|	Az bulutlu ve açık	|	28	|
+	Akdeniz	|	HATAY	|	Az bulutlu ve açık 	|	27	|
+	Akdeniz	|	ISPARTA	|	Az bulutlu ve açık 	|	24	|
+	Marmara	|	KIRKLARELİ	|	Parçalı bulutlu, gece saatlerinden itibaren çok bulutlu	|	20	|
+	Ege	|	MANİSA	|	Az bulutlu ve açık, akşam saatlerinden sonra parçalı bulutlu	|	27	|
+	OrtaVeDoguKaradeniz	|	AMASYA	|	Az bulutlu ve açık	|	24	|
+	IcAnadolu	|	ÇANKIRI	|	Az bulutlu ve açık, zamanla parçalı bulutlu	|	23	|

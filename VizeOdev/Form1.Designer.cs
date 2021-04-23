@@ -97,7 +97,7 @@ namespace VizeOdev
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VizeOdev.Properties.Resources.cloud;
-            this.ClientSize = new System.Drawing.Size(906, 531);
+            this.ClientSize = new System.Drawing.Size(906, 437);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
