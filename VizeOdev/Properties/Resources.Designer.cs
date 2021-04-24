@@ -69,5 +69,15 @@ namespace VizeOdev.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap disisleri_sozcu_1_16_9_1603573053 {
+            get {
+                object obj = ResourceManager.GetObject("disisleri-sozcu-1_16_9_1603573053", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -22,30 +22,34 @@ namespace VizeOdev
             InitializeComponent();
         }
 
-         string xmlbaglanti = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
+        const string xmlbaglanti = "https://www.mfa.gov.tr/tr.rss.mfa?8a5e254e-533a-4b3d-84db-9f95be1207ff";
         private void Form1_Load(object sender, EventArgs e)
         {
             XmlDocument belge = new XmlDocument();
             belge.Load(xmlbaglanti);
             XmlElement root = belge.DocumentElement;
-            XmlNodeList n1 = root.SelectNodes("sehirler");
+            XmlNodeList n1 = root.SelectNodes("channel/item");
+           
+           
 
+            
             foreach (XmlNode item in n1)
             {
-                string bolge = item["Bolge"].InnerText;
-                string il = item["ili"].InnerText;
-                string durum = item["Durum"].InnerText;
-                string sicaklik = item["Mak"].InnerText;
+                
+                string title = item["title"].InnerText;
+                string desc = item["description"].InnerText;
+             
+
+
 
                 DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-                row.Cells[0].Value = bolge;
-                row.Cells[1].Value = il;
-                row.Cells[2].Value = durum;
-                row.Cells[3].Value = sicaklik;
+                row.Cells[0].Value = title;
+                row.Cells[1].Value = desc;
+            
                 dataGridView1.Rows.Add(row);
             }
 
-            TextWriter yaz = new StreamWriter(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\Hava.txt");
+            TextWriter yaz = new StreamWriter(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\duyuru.txt");
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 for (int j = 0; j < dataGridView1.Columns.Count; j++)
@@ -57,15 +61,11 @@ namespace VizeOdev
             }
             yaz.Close();
 
-            Regex veri = new Regex("https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml");
+          
 
-            if (veri.IsMatch(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\Hava.txt"))
-                MessageBox.Show("Geçerli");
-            else
-                MessageBox.Show("Hatalı");
         }
+
         
-       
     }
     }
 
