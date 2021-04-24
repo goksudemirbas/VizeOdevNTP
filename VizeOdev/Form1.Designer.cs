@@ -30,11 +30,11 @@ namespace VizeOdev
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,12 +46,23 @@ namespace VizeOdev
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(81, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(765, 276);
+            this.dataGridView1.Size = new System.Drawing.Size(1080, 314);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(421, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(308, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Meteoroloji Hava Durumu";
             // 
             // Column1
             // 
@@ -72,7 +83,7 @@ namespace VizeOdev
             this.Column3.HeaderText = "DURUM";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 225;
+            this.Column3.Width = 400;
             // 
             // Column4
             // 
@@ -81,23 +92,12 @@ namespace VizeOdev
             this.Column4.Name = "Column4";
             this.Column4.Width = 70;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(310, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Meteoroloji Hava Durumu";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VizeOdev.Properties.Resources.cloud;
-            this.ClientSize = new System.Drawing.Size(906, 437);
+            this.ClientSize = new System.Drawing.Size(1124, 437);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";

@@ -11,6 +11,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.IO;
 
+using System.Text.RegularExpressions;
 
 namespace VizeOdev
 {
@@ -45,21 +46,26 @@ namespace VizeOdev
             }
 
             TextWriter yaz = new StreamWriter(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\Hava.txt");
-            for (int i = 0; i < dataGridView1.Rows.Count-1 ; i++)
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 for (int j = 0; j < dataGridView1.Columns.Count; j++)
                 {
-                    yaz.Write("\t" + dataGridView1.Rows[i].Cells[j].Value.ToString() + "\t" + "|");
+                    yaz.Write("\t" + dataGridView1.Rows[i].Cells[j].Value.ToString() + "\t" + "-");
                 }
                 yaz.WriteLine("");
 
             }
             yaz.Close();
-      
 
+            Regex veri = new Regex("https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml");
+
+            if (veri.IsMatch(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\Hava.txt"))
+                MessageBox.Show("Geçerli");
+            else
+                MessageBox.Show("Hatalı");
         }
-
+        
        
-        }
+    }
     }
 
