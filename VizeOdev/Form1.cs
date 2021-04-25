@@ -49,6 +49,17 @@ namespace VizeOdev
                 dataGridView1.Rows.Add(row);
             }
 
+
+            text();
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            text();
+        }
+
+        public void text()
+        {
             TextWriter yaz = new StreamWriter(@"C:\Users\hp\source\repos\VizeOdev\VizeOdev\bin\Debug\duyuru.txt");
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
@@ -61,11 +72,9 @@ namespace VizeOdev
             }
             yaz.Close();
 
-          
-
         }
 
-        
+       
     }
     }
 
