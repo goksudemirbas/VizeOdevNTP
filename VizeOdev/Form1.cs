@@ -56,6 +56,7 @@ namespace VizeOdev
         private void timer1_Tick(object sender, EventArgs e)
         {
             text();
+            MessageBox.Show("Güncel veri geldi.");
         }
 
         public void text()
